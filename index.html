@@ -8,37 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: #f8fafc; /* slate-50 */
-            color: #334155; /* slate-700 */
-        }
-        .section-title {
-            @apply text-3xl font-bold text-slate-800 mb-8 text-center;
-        }
-        .card {
-            @apply bg-white rounded-xl shadow-md p-6 transition-all duration-300 hover:shadow-xl hover:-translate-y-1 h-full;
-        }
-        .tag {
-            @apply inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded-full;
-        }
-        .nav-link {
-             @apply text-slate-600 hover:text-blue-600 transition-colors duration-300;
-        }
-        .spinner {
-            border: 4px solid rgba(0, 0, 0, 0.1);
-            width: 36px;
-            height: 36px;
-            border-radius: 50%;
-            border-left-color: #2563eb;
-            animation: spin 1s ease infinite;
-        }
-        @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body class="antialiased">
 
@@ -47,12 +17,12 @@
         <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
             <a href="#" class="text-xl font-bold text-slate-800">Abongwa Bonalais</a>
             <div class="hidden md:flex space-x-8">
-                <a href="#about" class="nav-link">About</a>
-                <a href="#experience" class="nav-link">Experience</a>
-                <a href="#skills" class="nav-link">Skills</a>
-                <a href="#projects" class="nav-link">Projects</a>
-                <a href="#awards-leadership" class="nav-link">Awards & Leadership</a>
-                <a href="#contact" class="nav-link">Contact</a>
+                <a href="#about" class="text-slate-600 hover:text-blue-600 transition-colors duration-300">About</a>
+                <a href="#experience" class="text-slate-600 hover:text-blue-600 transition-colors duration-300">Experience</a>
+                <a href="#skills" class="text-slate-600 hover:text-blue-600 transition-colors duration-300">Skills</a>
+                <a href="#projects" class="text-slate-600 hover:text-blue-600 transition-colors duration-300">Projects</a>
+                <a href="#awards-leadership" class="text-slate-600 hover:text-blue-600 transition-colors duration-300">Awards & Leadership</a>
+                <a href="#contact" class="text-slate-600 hover:text-blue-600 transition-colors duration-300">Contact</a>
             </div>
             <div class="md:hidden">
                 <!-- Mobile menu button can be added here -->
@@ -71,10 +41,10 @@
                 Specializing in software testing and automation, including backend API validation, UI testing, and CI/CD pipeline integration. Passionate about shipping reliable software and ensuring seamless user experiences.
             </p>
             <div class="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-4">
-                <a href="./Abongwa_Bonalais_QA_Engineer.pdf" download class="bg-blue-600 text-white font-bold py-3 px-6 rounded-lg shadow-md hover:bg-blue-700 transition-all duration-300 w-full sm:w-auto">
+                <a href="Abongwa_Bonalais_QA_Engineer_ELCA.pdf" download class="bg-blue-600 text-white font-bold py-3 px-6 rounded-lg shadow-md hover:bg-blue-700 transition-all duration-300 w-full sm:w-auto">
                     Download Resume
                 </a>
-                <a href="https://www.linkedin.com/in/abongwa-bonalais-a4a34a1a9" target="_blank" class="bg-slate-700 text-white font-bold py-3 px-6 rounded-lg shadow-md hover:bg-slate-800 transition-all duration-300 w-full sm:w-auto">
+                <a href="https://linkedin.com/in/abongwa-bonalais" target="_blank" class="bg-slate-700 text-white font-bold py-3 px-6 rounded-lg shadow-md hover:bg-slate-800 transition-all duration-300 w-full sm:w-auto">
                     View LinkedIn
                 </a>
                 <a href="https://github.com/burnleydev1" target="_blank" class="bg-slate-800 text-white font-bold py-3 px-6 rounded-lg shadow-md hover:bg-slate-900 transition-all duration-300 w-full sm:w-auto">
@@ -85,7 +55,7 @@
 
         <!-- About Me Section -->
         <section id="about" class="mb-20 md:mb-32 scroll-mt-20">
-             <h2 class="section-title">About Me</h2>
+             <h2 class="text-3xl font-bold text-slate-800 mb-8 text-center">About Me</h2>
              <div class="max-w-4xl mx-auto text-left md:text-center text-lg text-slate-600">
                  <p>I'm a dedicated QA Engineer with over two years of experience in the tech industry, holding a Bachelor of Engineering in Computer Engineering. My journey has taken me through fintech and edtech, where I've honed my skills in building robust automation suites with tools like Selenium, Rest Assured, and Appium. I'm a strong advocate for early bug detection and clean code practices. When I'm not ensuring software quality, I'm actively involved in the tech community, having served as a Cloud Lead for Google Developer Student Clubs and as a Microsoft Learn Student Ambassador. I'm a quick learner, a collaborative teammate, and I'm always excited about the next challenge in creating reliable and user-friendly software.</p>
              </div>
@@ -93,7 +63,7 @@
 
         <!-- Experience Section -->
         <section id="experience" class="mb-20 md:mb-32 scroll-mt-20">
-            <h2 class="section-title">Professional Experience</h2>
+            <h2 class="text-3xl font-bold text-slate-800 mb-8 text-center">Professional Experience</h2>
             <div class="relative max-w-4xl mx-auto">
                 <!-- Vertical line -->
                 <div class="absolute left-4 md:left-1/2 w-0.5 h-full bg-slate-200"></div>
@@ -103,7 +73,7 @@
                     <div class="hidden md:block w-5/12"></div>
                     <div class="z-10 flex items-center justify-center w-8 h-8 bg-blue-600 rounded-full text-white font-bold">1</div>
                     <div class="w-full md:w-5/12 pl-8 md:pl-0 md:pr-8">
-                        <div class="card">
+                        <div class="bg-white rounded-xl shadow-md p-6 transition-all duration-300 hover:shadow-xl hover:-translate-y-1 h-full">
                             <p class="text-sm text-slate-500">Jan 2024 - Present</p>
                             <h3 class="text-xl font-bold text-slate-800">QA Engineer</h3>
                             <p class="text-md font-semibold text-slate-600 mb-2">Maviance PLC</p>
@@ -117,7 +87,7 @@
                     <div class="hidden md:block w-5/12"></div>
                     <div class="z-10 flex items-center justify-center w-8 h-8 bg-blue-600 rounded-full text-white font-bold">2</div>
                     <div class="w-full md:w-5/12 pl-8">
-                        <div class="card">
+                        <div class="bg-white rounded-xl shadow-md p-6 transition-all duration-300 hover:shadow-xl hover:-translate-y-1 h-full">
                             <p class="text-sm text-slate-500">Sep 2022 - Present</p>
                             <h3 class="text-xl font-bold text-slate-800">QA Tester</h3>
                             <p class="text-md font-semibold text-slate-600 mb-2">Tester Work (Facebook, Instagram, Ayoba)</p>
@@ -131,7 +101,7 @@
                     <div class="hidden md:block w-5/12"></div>
                     <div class="z-10 flex items-center justify-center w-8 h-8 bg-blue-600 rounded-full text-white font-bold">3</div>
                     <div class="w-full md:w-5/12 pl-8 md:pl-0 md:pr-8">
-                        <div class="card">
+                        <div class="bg-white rounded-xl shadow-md p-6 transition-all duration-300 hover:shadow-xl hover:-translate-y-1 h-full">
                             <p class="text-sm text-slate-500">Aug 2023 - Jan 2024</p>
                             <h3 class="text-xl font-bold text-slate-800">OCaml Contributor</h3>
                             <p class="text-md font-semibold text-slate-600 mb-2">Tarides (Outreachy)</p>
@@ -145,7 +115,7 @@
                     <div class="hidden md:block w-5/12"></div>
                     <div class="z-10 flex items-center justify-center w-8 h-8 bg-blue-600 rounded-full text-white font-bold">4</div>
                     <div class="w-full md:w-5/12 pl-8">
-                        <div class="card">
+                        <div class="bg-white rounded-xl shadow-md p-6 transition-all duration-300 hover:shadow-xl hover:-translate-y-1 h-full">
                             <p class="text-sm text-slate-500">Apr 2023 - Sep 2023</p>
                             <h3 class="text-xl font-bold text-slate-800">Full Stack Developer</h3>
                             <p class="text-md font-semibold text-slate-600 mb-2">Skolabox</p>
@@ -159,30 +129,30 @@
 
         <!-- Skills Section -->
         <section id="skills" class="mb-20 md:mb-32 scroll-mt-20">
-            <h2 class="section-title">Technical Skills</h2>
+            <h2 class="text-3xl font-bold text-slate-800 mb-8 text-center">Technical Skills</h2>
             <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <div class="card">
+                <div class="bg-white rounded-xl shadow-md p-6 transition-all duration-300 hover:shadow-xl hover:-translate-y-1 h-full">
                     <h3 class="text-lg font-bold text-slate-800 mb-3">Languages</h3>
                     <div class="flex flex-wrap gap-2">
-                        <span class="tag">Go</span><span class="tag">Java</span><span class="tag">Python</span><span class="tag">SQL</span><span class="tag">JavaScript</span><span class="tag">OCaml</span><span class="tag">HTML/CSS</span>
+                        <span class="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">Go</span><span class="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">Java</span><span class="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">Python</span><span class="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">SQL</span><span class="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">JavaScript</span><span class="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">OCaml</span><span class="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">HTML/CSS</span>
                     </div>
                 </div>
-                <div class="card">
+                <div class="bg-white rounded-xl shadow-md p-6 transition-all duration-300 hover:shadow-xl hover:-translate-y-1 h-full">
                     <h3 class="text-lg font-bold text-slate-800 mb-3">QA Tools</h3>
                     <div class="flex flex-wrap gap-2">
-                        <span class="tag">Selenium</span><span class="tag">Appium</span><span class="tag">Rest Assured</span><span class="tag">TestNG</span><span class="tag">JUnit</span><span class="tag">Percy</span><span class="tag">Postman</span><span class="tag">TestLink</span>
+                        <span class="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">Selenium</span><span class="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">Appium</span><span class="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">Rest Assured</span><span class="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">TestNG</span><span class="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">JUnit</span><span class="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">Percy</span><span class="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">Postman</span><span class="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">TestLink</span>
                     </div>
                 </div>
-                <div class="card">
+                <div class="bg-white rounded-xl shadow-md p-6 transition-all duration-300 hover:shadow-xl hover:-translate-y-1 h-full">
                     <h3 class="text-lg font-bold text-slate-800 mb-3">Dev Tools</h3>
                     <div class="flex flex-wrap gap-2">
-                        <span class="tag">Git</span><span class="tag">Docker</span><span class="tag">Jenkins</span><span class="tag">GitLab CI</span><span class="tag">TravisCI</span><span class="tag">VS Code</span><span class="tag">IntelliJ</span>
+                        <span class="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">Git</span><span class="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">Docker</span><span class="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">Jenkins</span><span class="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">GitLab CI</span><span class="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">TravisCI</span><span class="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">VS Code</span><span class="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">IntelliJ</span>
                     </div>
                 </div>
-                <div class="card">
+                <div class="bg-white rounded-xl shadow-md p-6 transition-all duration-300 hover:shadow-xl hover:-translate-y-1 h-full">
                     <h3 class="text-lg font-bold text-slate-800 mb-3">Frameworks</h3>
                     <div class="flex flex-wrap gap-2">
-                        <span class="tag">Spring Boot</span><span class="tag">FastAPI</span><span class="tag">React</span><span class="tag">Angular</span>
+                        <span class="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">Spring Boot</span><span class="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">FastAPI</span><span class="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">React</span><span class="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">Angular</span>
                     </div>
                 </div>
             </div>
@@ -190,42 +160,42 @@
 
         <!-- Projects Section -->
         <section id="projects" class="mb-20 md:mb-32 scroll-mt-20">
-            <h2 class="section-title">Key Projects & Accomplishments</h2>
+            <h2 class="text-3xl font-bold text-slate-800 mb-8 text-center">Key Projects & Accomplishments</h2>
             <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
                 <!-- Project 1 -->
-                <div class="card">
+                <div class="bg-white rounded-xl shadow-md p-6 transition-all duration-300 hover:shadow-xl hover:-translate-y-1 h-full">
                     <h3 class="text-xl font-bold text-slate-800 mb-2">End-to-End API Test Automation</h3>
                     <p class="text-md font-semibold text-slate-600 mb-3">Maviance PLC</p>
                     <p class="text-slate-600 mb-4">Designed and built a comprehensive API test automation suite for corporate payment services. This included creating reusable tests for payment flows, tax integrations, and beneficiary validation, significantly improving regression testing efficiency.</p>
                     <div class="flex flex-wrap gap-2">
-                        <span class="tag">Rest Assured</span><span class="tag">PHPUnit</span><span class="tag">Jenkins</span><span class="tag">GitLab CI</span>
+                        <span class="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">Rest Assured</span><span class="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">PHPUnit</span><span class="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">Jenkins</span><span class="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">GitLab CI</span>
                     </div>
                 </div>
                 <!-- Project 2 -->
-                <div class="card">
+                <div class="bg-white rounded-xl shadow-md p-6 transition-all duration-300 hover:shadow-xl hover:-translate-y-1 h-full">
                     <h3 class="text-xl font-bold text-slate-800 mb-2">Visual Regression Testing Implementation</h3>
                     <p class="text-md font-semibold text-slate-600 mb-3">Maviance PLC</p>
                     <p class="text-slate-600 mb-4">Successfully integrated Percy for visual testing into the UAT workflow. This initiative helped the team detect UI regressions in complex transaction dashboards before they reached production, ensuring a consistent user experience.</p>
                     <div class="flex flex-wrap gap-2">
-                        <span class="tag">Percy</span><span class="tag">UI/UX</span><span class="tag">UAT</span>
+                        <span class="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">Percy</span><span class="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">UI/UX</span><span class="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">UAT</span>
                     </div>
                 </div>
                  <!-- Project 3 -->
-                <div class="card">
+                <div class="bg-white rounded-xl shadow-md p-6 transition-all duration-300 hover:shadow-xl hover:-translate-y-1 h-full">
                     <h3 class="text-xl font-bold text-slate-800 mb-2">High-Impact Bug Detection</h3>
                     <p class="text-md font-semibold text-slate-600 mb-3">Tester Work</p>
                     <p class="text-slate-600 mb-4">Identified and documented over 18 critical bugs for Facebook and Instagram. Provided detailed logs and reproduction steps that accelerated resolution times and improved stability for key features before release.</p>
                     <div class="flex flex-wrap gap-2">
-                        <span class="tag">Manual Testing</span><span class="tag">Bug Tracking</span><span class="tag">Jira</span>
+                        <span class="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">Manual Testing</span><span class="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">Bug Tracking</span><span class="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">Jira</span>
                     </div>
                 </div>
                  <!-- Project 4 -->
-                <div class="card">
+                <div class="bg-white rounded-xl shadow-md p-6 transition-all duration-300 hover:shadow-xl hover:-translate-y-1 h-full">
                     <h3 class="text-xl font-bold text-slate-800 mb-2">Full Stack Feature Development</h3>
                     <p class="text-md font-semibold text-slate-600 mb-3">Skolabox</p>
                     <p class="text-slate-600 mb-4">Developed and maintained key features for a school management platform using Spring Boot and Angular. Engineered a responsive admin interface that reduced task completion time for student data management by 15%.</p>
                     <div class="flex flex-wrap gap-2">
-                        <span class="tag">Spring Boot</span><span class="tag">Angular</span><span class="tag">PostgreSQL</span><span class="tag">Full Stack</span>
+                        <span class="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">Spring Boot</span><span class="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">Angular</span><span class="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">PostgreSQL</span><span class="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">Full Stack</span>
                     </div>
                 </div>
             </div>
@@ -233,9 +203,9 @@
 
         <!-- Awards & Leadership Section -->
         <section id="awards-leadership" class="mb-20 md:mb-32 scroll-mt-20">
-            <h2 class="section-title">Awards & Leadership</h2>
+            <h2 class="text-3xl font-bold text-slate-800 mb-8 text-center">Awards & Leadership</h2>
             <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 text-center">
-                <div class="card">
+                <div class="bg-white rounded-xl shadow-md p-6 transition-all duration-300 hover:shadow-xl hover:-translate-y-1 h-full">
                     <h3 class="text-xl font-bold text-slate-800 mb-2">Company Awards</h3>
                     <p class="text-md font-semibold text-slate-600 mb-3">Maviance PLC</p>
                     <ul class="text-slate-600 list-none space-y-2">
@@ -243,42 +213,16 @@
                         <li><span class="font-semibold text-blue-600">&#9733;</span> Team Player Award</li>
                     </ul>
                 </div>
-                <div class="card">
+                <div class="bg-white rounded-xl shadow-md p-6 transition-all duration-300 hover:shadow-xl hover:-translate-y-1 h-full">
                     <h3 class="text-xl font-bold text-slate-800 mb-2">Community Leadership</h3>
                     <p class="text-md font-semibold text-slate-600">Google Developer Student Clubs & Microsoft Learn Student Ambassador</p>
                 </div>
             </div>
         </section>
 
-        <!-- AI Logo Generator Section
-        <section id="ai-generator" class="bg-white rounded-2xl shadow-lg p-8 md:p-12 mb-20 md:mb-32">
-            <header class="text-center mb-8">
-                <h2 class="text-3xl font-bold text-slate-900">✨ AI-Powered Logo Generator</h2>
-                <p class="text-lg text-slate-600 mt-2 max-w-2xl mx-auto">Want to try something new? Describe a logo concept below, and our AI assistant, powered by the Gemini API, will generate a unique visual for you.</p>
-            </header>
-            
-            <div class="max-w-xl mx-auto">
-                <div class="flex flex-col sm:flex-row gap-4">
-                    <input type="text" id="prompt-input" placeholder="e.g., 'A minimalist shield logo in blue and gold'" class="flex-grow w-full px-4 py-3 rounded-lg border-2 border-slate-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition">
-                    <button id="generate-btn" class="bg-blue-600 text-white font-bold py-3 px-6 rounded-lg shadow-md hover:bg-blue-700 transition-all duration-300 disabled:bg-slate-400 disabled:cursor-not-allowed">
-                        Generate Logo
-                    </button>
-                </div>
-            </div>
-
-            <div id="result-container" class="mt-12 text-center">
-                <div id="loading-indicator" class="hidden mx-auto">
-                    <div class="spinner"></div>
-                    <p class="mt-4 text-slate-600">Generating your logo...</p>
-                </div>
-                <div id="image-container"></div>
-                 <p id="error-message" class="text-red-500 mt-4"></p>
-            </div>
-        </section> -->
-
         <!-- Contact Section -->
         <section id="contact" class="scroll-mt-20">
-            <h2 class="section-title">Get In Touch</h2>
+            <h2 class="text-3xl font-bold text-slate-800 mb-8 text-center">Get In Touch</h2>
             <div class="text-left md:text-center max-w-xl mx-auto">
                 <p class="text-lg text-slate-600 mb-6">
                     I'm currently seeking new opportunities and would love to hear from you. Whether you have a question or just want to connect, feel free to reach out.
@@ -299,73 +243,6 @@
         </div>
     </footer>
 
-    <script>
-        const generateBtn = document.getElementById('generate-btn');
-        const promptInput = document.getElementById('prompt-input');
-        const loadingIndicator = document.getElementById('loading-indicator');
-        const imageContainer = document.getElementById('image-container');
-        const errorMessage = document.getElementById('error-message');
-
-        generateBtn.addEventListener('click', async () => {
-            const prompt = promptInput.value;
-            if (!prompt) {
-                errorMessage.textContent = 'Please enter a description for the logo.';
-                return;
-            }
-
-            // Clear previous results and errors
-            imageContainer.innerHTML = '';
-            errorMessage.textContent = '';
-            loadingIndicator.classList.remove('hidden');
-            generateBtn.disabled = true;
-
-            try {
-                // Prepare the payload for the Gemini API call
-                const payload = {
-                    instances: [{ prompt: prompt }],
-                    parameters: { "sampleCount": 1 }
-                };
-                
-                // IMPORTANT: In a real application, the API key should not be hardcoded.
-                // This is left as an empty string because Canvas will provide it at runtime.
-                const apiKey = "AIzaSyApttjnwZxhyaNDC-eXmfOQU6YMgVZX2m0"; 
-                const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/imagen-3.0-generate-002:predict?key=${apiKey}`;
-
-                // Make the API call to generate the image
-                const response = await fetch(apiUrl, {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify(payload)
-                });
-
-                if (!response.ok) {
-                    throw new Error(`HTTP error! status: ${response.status}`);
-                }
-
-                const result = await response.json();
-
-                // Check for a valid response and display the image
-                if (result.predictions && result.predictions.length > 0 && result.predictions[0].bytesBase64Encoded) {
-                    const imageUrl = `data:image/png;base64,${result.predictions[0].bytesBase64Encoded}`;
-                    const imgElement = document.createElement('img');
-                    imgElement.src = imageUrl;
-                    imgElement.alt = `AI generated logo for: ${prompt}`;
-                    imgElement.className = 'mx-auto rounded-lg shadow-lg';
-                    imageContainer.appendChild(imgElement);
-                } else {
-                    throw new Error('The AI did not return a valid image. Please try a different prompt.');
-                }
-
-            } catch (error) {
-                console.error('Error generating image:', error);
-                errorMessage.textContent = `An error occurred: ${error.message}. Please try again.`;
-            } finally {
-                // Hide loading indicator and re-enable button
-                loadingIndicator.classList.add('hidden');
-                generateBtn.disabled = false;
-            }
-        });
-    </script>
-
+    <script src="script.js"></script>
 </body>
 </html>
